@@ -1,0 +1,94 @@
+/* Styles généraux pour le corps de la page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Conteneur principal du chatbot */
+.chat-container {
+    width: 400px;
+    max-width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Zone où les messages apparaissent */
+.chat-box {
+    flex-grow: 1;
+    padding: 15px;
+    background-color: #e9f0f7;
+    overflow-y: auto;
+    height: 400px;
+    border-bottom: 2px solid #d1d9e6;
+    font-size: 14px;
+}
+
+/* Conteneur de l'input */
+.input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #ffffff;
+    border-top: 1px solid #d1d9e6;
+}
+
+/* Input de texte */
+#message-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #d1d9e6;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#message-input:focus {
+    border-color: #3b82f6;
+}
+
+/* Bouton d'envoi */
+#send-button {
+    background-color: #3b82f6;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+#send-button:hover {
+    background-color: #336fcc;
+}
+
+/* Style des messages (vous pouvez personnaliser ceci pour différencier les messages envoyés et reçus) */
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour les messages envoyés */
+.message.user {
+    background-color: #d1e7ff;
+    align-self: flex-end;
+}
+
+/* Style pour les messages reçus */
+.message.bot {
+    background-color: #f4f7fc;
+    align-self: flex-start;
+}
